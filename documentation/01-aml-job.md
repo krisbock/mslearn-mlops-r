@@ -20,7 +20,7 @@ challenge:
 
 ## Challenge scenario
 
-To automate machine learning workflows, you can define machine learning tasks in scripts. To execute any workflow consisting of Python scripts, use Azure Machine Learning jobs. Azure Machine Learning jobs store all metadata of a workflow, including input parameters and output metrics. By running scripts as jobs, it's easier to track and manage your machine learning models.
+To automate machine learning workflows, you can define machine learning tasks in scripts. To execute any workflow consisting of R scripts, use Azure Machine Learning jobs. Azure Machine Learning jobs store all metadata of a workflow, including input parameters and output metrics. By running scripts as jobs, it's easier to track and manage your machine learning models.
 
 ## Prerequisites
 
@@ -42,7 +42,7 @@ By completing this challenge, you'll learn how to:
 
 ## Instructions
 
-In the **src/model** folder, you'll find a Python script which reads CSV files from a folder and uses the data to train a classification model. In the **src** folder, you'll find a YAML file to define a job. There are values missing in the YAML file. It's up to you to complete it. 
+In the **src/model** folder, you'll find an R script which reads CSV files from a folder and uses the data to train a classification model. In the **src** folder, you'll find a YAML file to define a job. There are values missing in the YAML file. It's up to you to complete it. 
 
 - Create an Azure Machine Learning workspace and a compute instance.
 - Use the CLI (v2) to create a registered data asset with the following configuration:
@@ -55,7 +55,7 @@ In the **src/model** folder, you'll find a Python script which reads CSV files f
 Using the CLI (v2) you can create a data asset by defining the <a href="https://docs.microsoft.com/azure/machine-learning/reference-yaml-data">configuration in a YAML file</a> <b>or</b> by specifying the configuration in the <a href="https://docs.microsoft.com/cli/azure/ml/data?view=azure-cli-latest">CLI command</a>.
 </details>
  
-- Complete the `job.yml` file to define the Azure Machine Learning job to run the `train.py` script, with the registered data asset as input. 
+- Complete the `job.yml` file to define the Azure Machine Learning job to run the `train.R` script, with the registered data asset as input. 
 - Use the CLI (v2) to run the job. 
 
 > **Tip:**

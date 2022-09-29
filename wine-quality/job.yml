@@ -1,0 +1,16 @@
+$schema: https://azuremlschemas.azureedge.net/latest/commandJob.schema.json
+code: src
+command: >-
+  Rscript wine-quality.R
+  --data ${{inputs.training_data}}
+inputs:
+  training_data:
+    path: data
+    mode: ro_mount
+environment:
+  build:
+    path: environment
+compute:  azureml:cpu-cluster
+display_name: r-wine-quality-example
+experiment_name: r-wine-quality-example
+description: Train a GLM using R on the wine quality dataset.  

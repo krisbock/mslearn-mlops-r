@@ -1,7 +1,7 @@
 ---
 challenge:
     module: Use an Azure Machine Learning job for automation
-    challenge: '0: Convert a notebook to production code'
+    challenge: '0: Convert a script into production code'
 ---
 
 <style>
@@ -14,42 +14,38 @@ challenge:
 }
 </style>
 
-# Challenge 0: Convert a notebook to production code
+# Step 0: Convert a script into production code
 
 <button class="button" onclick="window.location.href='https://microsoftlearning.github.io/mslearn-mlops/';">Back to overview</button>
 
-## Challenge scenario
+## Scenario
 
-The first step to automate machine learning workflows is to convert a Jupyter notebook to production-ready code. When you store your code as scripts, it's easier to automate the code execution. You can parameterize scripts to easily reuse the code for retraining.
+The first step to automate machine learning workflows is to convert an R script into production-ready code. When you store your code as scripts, it's easier to automate the code execution. You can parameterise scripts to easily reuse the code for retraining.
 
 ## Prerequisites
 
-To complete this challenge, you'll need:
+To complete this step, you'll need:
 
 - Access to an Azure subscription.
 - A GitHub account.
 
 ## Objectives
 
-By completing this challenge, you'll learn how to:
+By completing this step, you'll learn how to:
 
 - Clean nonessential code.
-- Convert your code to Python scripts.
+- Convert your code to production scripts.
 - Use functions in your scripts.
 - Use parameters in your scripts.
 
 > **Important!**
-> Each challenge is designed to allow you to explore how to implement DevOps principles when working with machine learning models. Some instructions may be intentionally vague, inviting you to think about your own preferred approach. If for example, the instructions ask you to create an Azure Machine Learning workspace, it's up to you to explore and decide how you want to create it. To make it the best learning experience for you, it's up to you to make it as simple or as challenging as you want.
-
-## Challenge Duration
-
-- **Estimated Time**: 30 minutes
+> Each step is designed to demonstrate how to implement MLOps principles when working with machine learning models. Some instructions may be intentionally vague, inviting you to think about your own preferred approach. If for example, the instructions ask you to create an Azure Machine Learning workspace, it's up to you to explore and decide how you want to create it. To make it the best learning experience for you, it's up to you to make it as simple or as challenging as you want.
 
 ## Instructions
 
-To work through the challenges, you need **your own public repo** which includes the challenge files. Create a new public repo by navigating to [https://github.com/MicrosoftLearning/mslearn-mlops](https://github.com/MicrosoftLearning/mslearn-mlops) and selecting the **Use this template** button to create your own repo.
+To work through the challenges, you need **your own public repo** which includes the challenge files. Create a new public repo by navigating to [https://github.com/krisbock/mslearn-mlops-r](https://github.com/krisbock/mslearn-mlops-r) and selecting the **Use this template** button to create your own repo.
 
-In the **experimentation** folder, you'll find a Jupyter notebook that trains a classification model. The data used by the notebook is in the **experimentation/data** folder and contains a CSV file. 
+In the **experimentation** folder, you'll find an R script that trains a classification model. The data used by the notebook is in the **experimentation/data** folder and contains a CSV file. 
 
 In the **src/model** folder you'll find a `train.py` script which already includes code converted from part of the notebook. It's up to you to complete it. 
 
